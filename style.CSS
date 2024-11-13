@@ -19,18 +19,28 @@ body {
     justify-content: space-between;
 }
 
+.bgRed {
+    background-color: #b34741;
+}
+
 .alignCenter {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
 }
 
+a {
+   display: inline-block; 
+}
+    
+
+
 li {
-    list-style: none;
+    list-style: none;   
 }
 
 .btn {
@@ -64,6 +74,11 @@ header {
 
 header img {
     width: 15%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }
 
 .card {
@@ -133,4 +148,23 @@ h1 {
 .p {
     height: 45%;
     width: 45%;
+}
+
+/* services */
+
+.containerServices div {
+    background-color: red;
+    width: 60%;
+    margin-left: 60px;
+    gap: 32px;
+}
+
+.containerServices aside {
+    background-color: pink;
+    width: 15%;
+}
+
+.containerServices img {
+    width: 300px;
+    height: 300px;
 }
