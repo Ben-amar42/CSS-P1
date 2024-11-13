@@ -1,14 +1,136 @@
-.bouton{
-    background-color: blueviolet; /* je fait un arrondi de 10px dans les angles */
-    font-size: 30px; /* taille de la police */
-    color: black; /* couleur du texte */
-    text-decoration: none; /* rettirer la ligne, retirer la decoloration du texte */
-    border-radius: 10px; /* je fait un arrondi de 10px dans les angles */
-    padding: 20px 60px*1 /* mange interieur du bloc */
-    border: 4px solid red; /* gestion de la bordure : epaisseur, type de ligne */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=WindSong:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    background-color: #b34741;
+    padding: 16px 55px;
+    border-radius: 23px;
+    font-size: 1rem;
 }
 
 
-.textCentre {
-text-align: center;  /* centrer le textes */  
+
+/* header */
+
+header nav {
+    width: 40%;
+}
+
+header {
+    padding: 0px 40px;
+    background-color: #b34741;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.navHeader {
+    width: 50%;
+}
+
+header img {
+    width: 15%;
+}
+
+.card {
+    position: relative;
+    display: block;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero div {
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 64px;
+    backdrop-filter: blur(100px); /* sa permet de rendre le backgroud-color flou */
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: white;
+}
+
+.cardContainer {
+    width: 60%;
+    margin-left: 70px;
+}
+
+.p {
+    height: 45%;
+    width: 45%;
 }
